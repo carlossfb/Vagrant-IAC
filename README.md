@@ -30,3 +30,12 @@ Vagrant.configure("2") do |config|
   end
 end
 ```
+## Docker para cada VM
+
+Cada **VM** precisará do Docker, então repare que no Vagrantfile teremos a execução de um bash, após perceber isso compare com o cod abaixo para identificar a instalação do Docker individualmente para cada NÓ.
+```bash
+echo "Instalando o Docker......."
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+```
